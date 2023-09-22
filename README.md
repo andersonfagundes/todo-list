@@ -2,8 +2,6 @@
 
 ## 🚀 About this project
 
-<hr />
-
 This is a task control application in the **to-do list** style, which contains the following functionalities:
 
 - Add a new task
