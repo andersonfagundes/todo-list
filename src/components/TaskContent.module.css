@@ -1,0 +1,37 @@
+section {
+  display: flex;
+  justify-content: center;
+}
+
+.allTask {
+  width: 46rem;
+  height: 15.25rem;
+  border: 1px solid var(--gray-400);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.allTask img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.allTask p:nth-child(2) {
+  color: var(--gray-300);
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.allTask p:nth-child(3) {
+  color: var(--gray-300);
+  font-size: 1rem;
+  font-weight: regular;
+}

@@ -3,18 +3,14 @@ import plus from '../assets/plus.svg';
 
 export function AddTask() {
   return (
-    <section>
+    <div className={styles.addTask}>
       <form>
-        <input
-          type="text"
-          placeholder="Add a new task"
-          className={styles.task}
-        />
+        <input type="text" placeholder="Add a new task" />
         <button>
           <span>Add</span>
           <img src={plus} />
         </button>
       </form>
-    </section>
+    </div>
   );
 }

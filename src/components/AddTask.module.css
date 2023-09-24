@@ -1,9 +1,9 @@
-section {
+.addTask {
   display: flex;
   justify-content: center;
 }
 
-.task {
+.addTask input {
   background: var(--gray-500);
   width: 39.87rem;
   height: 3.37rem;
@@ -15,7 +15,7 @@ section {
   float: left;
 }
 
-section button {
+.addTask button {
   background: var(--blue-dark);
   width: 5.62rem;
   height: 3.25rem;
@@ -32,10 +32,10 @@ section button {
   align-items: center;
 }
 
-section button span {
+.addTask button span {
   padding-left: 1rem;
 }
 
-section button img {
+.addTask button img {
   margin-left: -0.7rem;
 }

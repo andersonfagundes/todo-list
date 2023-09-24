@@ -1,0 +1,27 @@
+section {
+  display: flex;
+  justify-content: center;
+}
+.task {
+  width: 46rem;
+  height: 2.68rem;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.createdTask {
+  color: var(--blue);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.completedTask {
+  color: var(--purple);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.allCreatedTask {
+  border: 1px solid #00ff00;
+}
