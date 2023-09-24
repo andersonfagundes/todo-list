@@ -1,0 +1,41 @@
+section {
+  display: flex;
+  justify-content: center;
+}
+
+.task {
+  background: var(--gray-500);
+  width: 39.87rem;
+  height: 3.37rem;
+  border: 0px solid var(--gray-400);
+  border-radius: 0.5rem;
+  color: var(--gray-300);
+  padding: 0.5rem;
+  margin-top: -1.8rem;
+  float: left;
+}
+
+section button {
+  background: var(--blue-dark);
+  width: 5.62rem;
+  height: 3.25rem;
+  border: 0px solid var(--blue-dark);
+  border-radius: 0.5rem;
+  font-weight: bold;
+  color: var(--gray-100);
+  font-size: 0.87rem;
+  margin: -1.8rem 0rem 0rem 0.5rem;
+  float: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section button span {
+  padding-left: 1rem;
+}
+
+section button img {
+  margin-left: -0.7rem;
+}

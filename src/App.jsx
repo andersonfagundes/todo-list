@@ -1,12 +1,12 @@
 import { Header } from './components/Header';
+import { AddTask } from './components/AddTask';
 import './global.css';
 
 function App() {
   return (
     <>
       <Header />
-
-      <h1>Hello</h1>
+      <AddTask />
     </>
   );
 }
