@@ -15,6 +15,10 @@
   float: left;
 }
 
+.addTask input:focus {
+  outline: none;
+}
+
 .addTask button {
   background: var(--blue-dark);
   width: 5.62rem;
