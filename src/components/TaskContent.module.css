@@ -35,3 +35,15 @@ section {
   font-size: 1rem;
   font-weight: regular;
 }
+
+@media (max-width: 520px) {
+  .allTask {
+    width: 25.3rem;
+  }
+}
+
+@media (min-width: 521px) and (max-width: 768px) {
+  .allTask {
+    width: 31rem;
+  }
+}

@@ -47,3 +47,31 @@
 .addTask button img {
   margin-left: -0.7rem;
 }
+
+@media (max-width: 520px) {
+  .addTask input {
+    width: 20rem;
+    height: 3rem;
+    font-size: 12px;
+  }
+
+  .addTask button {
+    width: 5rem;
+    height: 3rem;
+    font-size: 0.87rem;
+  }
+}
+
+@media (min-width: 521px) and (max-width: 768px) {
+  .addTask input {
+    width: 25rem;
+    height: 3rem;
+    font-size: 14px;
+  }
+
+  .addTask button {
+    width: 5.62rem;
+    height: 3rem;
+    font-size: 0.87rem;
+  }
+}

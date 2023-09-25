@@ -25,3 +25,15 @@ section {
 .allCreatedTask {
   border: 1px solid #00ff00;
 }
+
+@media (max-width: 520px) {
+  .task {
+    width: 25.3rem;
+  }
+}
+
+@media (min-width: 521px) and (max-width: 768px) {
+  .task {
+    width: 31rem;
+  }
+}
