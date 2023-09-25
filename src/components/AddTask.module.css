@@ -36,6 +36,10 @@
   align-items: center;
 }
 
+.addTask button:hover {
+  background: var(--blue);
+}
+
 .addTask button span {
   padding-left: 1rem;
 }
