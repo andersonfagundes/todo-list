@@ -26,6 +26,30 @@ section {
   border: 1px solid #00ff00;
 }
 
+.createdTask > span {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.18rem;
+  background-image: url(../assets/counter-created.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin-left: 0.5rem;
+  color: var(--gray-200);
+}
+
+.completedTask > span {
+  display: inline-block;
+  width: 3.25rem;
+  height: 1.18rem;
+  background-image: url(../assets/counter-completed.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin-left: 0.5rem;
+  color: var(--gray-200);
+}
+
 @media (max-width: 520px) {
   .task {
     width: 20rem;
