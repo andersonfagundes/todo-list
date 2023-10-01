@@ -5,6 +5,7 @@ article {
   border-radius: 8px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 12px;
 }
 
 article input[type='radio'] {
@@ -27,6 +28,7 @@ article input[type='radio']:checked {
   background-image: url(../assets/checked.svg);
   background-repeat: no-repeat;
   background-position: center center;
+  /* text-decoration: line-through; */
 }
 
 article label {
@@ -34,7 +36,6 @@ article label {
   width: 39.5rem;
   height: auto;
   word-break: break-word;
-  text-decoration: line-through;
 }
 
 article img {
@@ -44,14 +45,14 @@ article img {
   cursor: pointer;
 }
 
-/* @media (max-width: 520px) {
-  .allTask {
+@media (max-width: 520px) {
+  article {
     width: 20rem;
   }
 }
 
 @media (min-width: 521px) and (max-width: 768px) {
-  .allTask {
+  article {
     width: 31rem;
   }
-} */
+}

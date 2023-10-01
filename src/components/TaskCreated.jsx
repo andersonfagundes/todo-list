@@ -4,7 +4,7 @@ import trash from '../assets/trash.svg';
 export function TaskCreated() {
   return (
     <article>
-      <input type="radio" name="d" value="1" />
+      <input type="radio" />
       <label>
         Integer urna interdum massa libero auctor neque turpis turpis semper.
         Duis vel sed fames integer.
