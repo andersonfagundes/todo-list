@@ -1,0 +1,57 @@
+article {
+  width: 46rem;
+  min-height: 4.5rem;
+  background: var(--gray-500);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+article input[type='radio'] {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  appearance: none;
+  padding: 5px;
+  border: 2px solid var(--blue);
+  background-color: var(--gray-500);
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 1rem;
+}
+
+article input[type='radio']:checked {
+  border: none;
+  cursor: pointer;
+  background: var(--purple-dark);
+  background-image: url(../assets/checked.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+article label {
+  margin: 1rem 1rem 1rem 0rem;
+  width: 39.5rem;
+  height: auto;
+  word-break: break-word;
+  text-decoration: line-through;
+}
+
+article img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 1rem 1rem 2rem 1rem;
+  cursor: pointer;
+}
+
+/* @media (max-width: 520px) {
+  .allTask {
+    width: 20rem;
+  }
+}
+
+@media (min-width: 521px) and (max-width: 768px) {
+  .allTask {
+    width: 31rem;
+  }
+} */

@@ -5,6 +5,12 @@ section {
 
 .allTask {
   width: 46rem;
+  height: auto;
+  border: none;
+}
+
+.noTask {
+  width: 46rem;
   height: 15.25rem;
   border: 1px solid var(--gray-400);
   border-top-left-radius: 8px;
@@ -18,32 +24,32 @@ section {
   align-items: center;
 }
 
-.allTask img {
+.noTask img {
   width: 3.5rem;
   height: 3.5rem;
 }
 
-.allTask p:nth-child(2) {
+.noTask p:nth-child(2) {
   color: var(--gray-300);
   margin-top: 1rem;
   font-size: 1rem;
   font-weight: bold;
 }
 
-.allTask p:nth-child(3) {
+.noTask p:nth-child(3) {
   color: var(--gray-300);
   font-size: 1rem;
   font-weight: regular;
 }
 
 @media (max-width: 520px) {
-  .allTask {
-    width: 25.3rem;
+  .noTask {
+    width: 20rem;
   }
 }
 
 @media (min-width: 521px) and (max-width: 768px) {
-  .allTask {
+  .noTask {
     width: 31rem;
   }
 }

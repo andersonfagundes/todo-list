@@ -1,14 +1,18 @@
 import styles from './TaskContent.module.css';
 import clipboard from '../assets/Clipboard.svg';
+import { TaskCreated } from './TaskCreated';
 
 export function TaskContent() {
   return (
     <section>
-      <div className={styles.allTask}>
+      <div className={styles.noTask}>
         <img src={clipboard} />
         <p>You don't have tasks registered yet</p>
-        <p>Create tasks and organize your to-do items</p>
+        <p>Create tasks and organize your items</p>
       </div>
+      {/* <div className={styles.allTask}>
+        <TaskCreated />
+      </div> */}
     </section>
   );
 }
