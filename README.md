@@ -19,7 +19,6 @@ This is a task control application in the **to-do list** style, which contains t
 
 This project was developed using cutting edge front-end technologies.
 
-
 - [ReactJS](https://reactjs.org/)
 - [Vite](https://vitejs.dev/)
 
