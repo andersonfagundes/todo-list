@@ -21,7 +21,7 @@ This project was developed using cutting edge front-end technologies.
 
 
 - [ReactJS](https://reactjs.org/)
-- [Vite](https://www.typescriptlang.org/](https://vitejs.dev/)
+- [Vite](https://vitejs.dev/)
 
 ## 💻 Getting started
 
