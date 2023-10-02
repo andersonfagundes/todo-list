@@ -12,7 +12,9 @@ export function AddTask({ addTask }) {
       content: newTask,
     };
 
-    addTask(arrayNewTask); // Chame a função do componente pai para adicionar a tarefa
+    addTask(arrayNewTask);
+
+    event.target.task.value = '';
   }
 
   return (
