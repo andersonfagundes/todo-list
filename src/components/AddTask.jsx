@@ -1,16 +1,25 @@
 import styles from './AddTask.module.css';
 import plus from '../assets/plus.svg';
 
-export function AddTask() {
-  function handleCreateNewTask() {
+export function AddTask({ addTask }) {
+  function handleNewTask(event) {
     event.preventDefault();
+
+    const newTask = event.target.task.value;
+
+    const arrayNewTask = {
+      id: Math.floor(Math.random() * 900) + 100,
+      content: newTask,
+    };
+
+    addTask(arrayNewTask); // Chame a função do componente pai para adicionar a tarefa
   }
 
   return (
     <div className={styles.addTask}>
-      <form onSubmit={handleCreateNewTask}>
-        <input type="text" placeholder="Add a new task" />
-        <button>
+      <form onSubmit={handleNewTask}>
+        <input type="text" name="task" required placeholder="Add a new task" />
+        <button type="submit">
           <span>Add</span>
           <img src={plus} />
         </button>
