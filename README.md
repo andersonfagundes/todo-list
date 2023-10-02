@@ -10,11 +10,41 @@ This is a task control application in the **to-do list** style, which contains t
 - Show task completion progress
 
 
-# React + Vite
+## Tecnologies
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project was developed using cutting edge front-end technologies.
 
-Currently, two official plugins are available:
+- [ReactJS](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 💻 Getting started
+
+### Requirements
+
+- You need to install both [Node.js](https://nodejs.org/en/download/) to run this project.
+
+**Clone the project and access the folder**
+
+```bash
+$ git clone https://github.com/andersonfagundes/todo-list.git && cd todo-list
+```
+
+**Follow the steps below**
+
+```bash
+# Install the dependencies
+$ npm install
+
+# Run the web server
+$ npm run dev
+```
+
+The app will be available for access on your browser at `http://localhost:5173`
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+Made by Anderson Fagundes 👋 [Check out my LinkedIn](https://www.linkedin.com/in/anderson-fagundes)
