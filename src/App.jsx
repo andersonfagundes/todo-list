@@ -11,13 +11,11 @@ function App() {
     setArrayTasks([...arrayTasks, newTask]);
   };
 
-  console.log(arrayTasks);
   return (
     <>
       <Header />
       <AddTask addTask={addTask} />
-
-      <Task />
+      <Task totalCreatedTasks={arrayTasks.length} />
     </>
   );
 }
