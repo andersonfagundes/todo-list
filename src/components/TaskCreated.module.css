@@ -48,6 +48,11 @@ article img {
 @media (max-width: 520px) {
   article {
     width: 20rem;
+    margin: 0 auto 12px auto;
+  }
+  article input[type='radio'] {
+    width: 1rem;
+    height: 1rem;
   }
 }
 
