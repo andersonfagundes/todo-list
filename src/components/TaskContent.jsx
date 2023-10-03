@@ -2,7 +2,7 @@ import styles from './TaskContent.module.css';
 import clipboard from '../assets/Clipboard.svg';
 import { TaskCreated } from './TaskCreated';
 
-export function TaskContent({ tasks = { tasks } }) {
+export function TaskContent({ tasks }) {
   return (
     <section>
       {tasks.length === 0 ? (
@@ -14,7 +14,7 @@ export function TaskContent({ tasks = { tasks } }) {
       ) : (
         <div className={styles.allTask}>
           {tasks.map((task) => {
-            return <TaskCreated key={task} />;
+            return <TaskCreated key={task.id} content={task.content} />;
           })}
         </div>
       )}

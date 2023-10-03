@@ -1,14 +1,11 @@
 import styles from './TaskCreated.module.css';
 import trash from '../assets/trash.svg';
 
-export function TaskCreated() {
+export function TaskCreated({ content }) {
   return (
     <article>
       <input type="radio" />
-      <label>
-        Integer urna interdum massa libero auctor neque turpis turpis semper.
-        Duis vel sed fames integer.
-      </label>
+      <label>{content}</label>
       <img src={trash} />
     </article>
   );
