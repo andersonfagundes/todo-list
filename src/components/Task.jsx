@@ -1,11 +1,11 @@
 import { TaskContent } from './TaskContent';
 import { TaskHeader } from './TaskHeader';
 
-export function Task({ totalCreatedTasks }) {
+export function Task({ tasks }) {
   return (
     <>
-      <TaskHeader totalCreatedTasks={totalCreatedTasks} />
-      <TaskContent />
+      <TaskHeader tasks={tasks} />
+      <TaskContent tasks={tasks} />
     </>
   );
 }

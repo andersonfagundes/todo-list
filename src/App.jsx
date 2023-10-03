@@ -15,7 +15,7 @@ function App() {
     <>
       <Header />
       <AddTask addTask={addTask} />
-      <Task totalCreatedTasks={arrayTasks.length} />
+      <Task tasks={arrayTasks} />
     </>
   );
 }
