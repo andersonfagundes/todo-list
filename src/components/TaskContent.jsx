@@ -2,7 +2,7 @@ import styles from './TaskContent.module.css';
 import clipboard from '../assets/Clipboard.svg';
 import { TaskCreated } from './TaskCreated';
 
-export function TaskContent({ tasks }) {
+export function TaskContent({ tasks, onDeleteTask }) {
   return (
     <section>
       {tasks.length === 0 ? (
@@ -14,7 +14,13 @@ export function TaskContent({ tasks }) {
       ) : (
         <div className={styles.allTask}>
           {tasks.map((task) => {
-            return <TaskCreated key={task.id} content={task.content} />;
+            return (
+              <TaskCreated
+                key={task.id}
+                task={task}
+                onDeleteTask={onDeleteTask}
+              />
+            );
           })}
         </div>
       )}
