@@ -28,7 +28,6 @@ article input[type='radio']:checked {
   background-image: url(../assets/checked.svg);
   background-repeat: no-repeat;
   background-position: center center;
-  /* text-decoration: line-through; */
 }
 
 article label {
