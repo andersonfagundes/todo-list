@@ -8,7 +8,7 @@ article {
   margin-bottom: 12px;
 }
 
-article input[type='radio'] {
+article input[type='checkbox'] {
   width: 1.5rem;
   height: 1.5rem;
   cursor: pointer;
@@ -21,7 +21,7 @@ article input[type='radio'] {
   margin: 1rem;
 }
 
-article input[type='radio']:checked {
+article input[type='checkbox']:checked {
   border: none;
   cursor: pointer;
   background: var(--purple-dark);
@@ -49,7 +49,7 @@ article img {
     width: 20rem;
     margin: 0 auto 12px auto;
   }
-  article input[type='radio'] {
+  article input[type='checkbox'] {
     width: 1rem;
     height: 1rem;
   }

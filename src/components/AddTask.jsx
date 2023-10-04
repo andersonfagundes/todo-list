@@ -10,6 +10,7 @@ export function AddTask({ addTask }) {
     const arrayNewTask = {
       id: Math.floor(Math.random() * 900) + 100,
       content: newTask,
+      status: 0,
     };
 
     addTask(arrayNewTask);

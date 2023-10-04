@@ -1,6 +1,8 @@
 import styles from './TaskHeader.module.css';
 
 export function TaskHeader({ tasks }) {
+  const justCreatedTasks = tasks.filter((task) => task.status === 0);
+
   return (
     <section>
       <div className={styles.task}>
@@ -8,7 +10,11 @@ export function TaskHeader({ tasks }) {
           Created tasks <span>{tasks.length}</span>
         </div>
         <div className={styles.completedTask}>
-          Completed<span>2 de 5</span>
+          Completed
+          <span>
+            {justCreatedTasks.length}
+            {' de '}
+          </span>
         </div>
       </div>
     </section>

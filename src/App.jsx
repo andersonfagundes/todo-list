@@ -11,18 +11,24 @@ function App() {
     setArrayTasks([...arrayTasks, newTask]);
   };
 
+  function updateStatusTask(updatedStatusTask) {}
+
   function handleDeleteTask(taskToDelete) {
     const updatedTasks = arrayTasks.filter(
       (task) => task.id !== taskToDelete.id,
     );
     setArrayTasks(updatedTasks);
   }
-
+  console.log(arrayTasks);
   return (
     <>
       <Header />
       <AddTask addTask={addTask} />
-      <Task tasks={arrayTasks} onDeleteTask={handleDeleteTask} />
+      <Task
+        tasks={arrayTasks}
+        onUpdateStatusTask={updateStatusTask}
+        onDeleteTask={handleDeleteTask}
+      />
     </>
   );
 }
