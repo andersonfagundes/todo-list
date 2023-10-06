@@ -9,7 +9,7 @@ This is a task control application in the **to-do list** style, which contains t
 - Remove a task from the list
 - Show task completion progress
 
-[Demo](https://todo-list-alpha-beige.vercel.app/)
+[Demo](https://todo-list-alpha-beige.vercel.app/){:target="_blank"}
 
 ## Tecnologies
 
