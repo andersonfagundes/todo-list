@@ -10,18 +10,23 @@ export function AddTask({ addTask }) {
     const arrayNewTask = {
       id: Math.floor(Math.random() * 900) + 100,
       content: newTask,
-      status: 0,
     };
 
     addTask(arrayNewTask);
-
+    console.log(arrayNewTask);
     event.target.task.value = '';
   }
 
   return (
     <div className={styles.addTask}>
       <form onSubmit={handleNewTask}>
-        <input type="text" name="task" required placeholder="Add a new task" />
+        <input
+          type="text"
+          name="task"
+          autoFocus
+          required
+          placeholder="Add a new task"
+        />
         <button type="submit">
           <span>Add</span>
           <img src={plus} />

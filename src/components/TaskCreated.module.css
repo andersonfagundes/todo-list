@@ -53,6 +53,10 @@ article img {
     width: 1rem;
     height: 1rem;
   }
+  article input[type='checkbox']:checked {
+    width: 1rem;
+    height: 1rem;
+  }
 }
 
 @media (min-width: 521px) and (max-width: 768px) {

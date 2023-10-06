@@ -1,7 +1,7 @@
 import styles from './TaskHeader.module.css';
 
-export function TaskHeader({ tasks }) {
-  const justCreatedTasks = tasks.filter((task) => task.status === 0);
+export function TaskHeader({ tasks, totalCompletedTask }) {
+  // const justCreatedTasks = tasks.filter((task) => task.status === 0);
 
   return (
     <section>
@@ -11,10 +11,7 @@ export function TaskHeader({ tasks }) {
         </div>
         <div className={styles.completedTask}>
           Completed
-          <span>
-            {justCreatedTasks.length}
-            {' de '}
-          </span>
+          <span>{`${totalCompletedTask} de ${tasks.length}`}</span>
         </div>
       </div>
     </section>

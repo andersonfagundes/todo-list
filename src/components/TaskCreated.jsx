@@ -1,12 +1,19 @@
 import styles from './TaskCreated.module.css';
 import trash from '../assets/trash.svg';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
-export function TaskCreated({ task, onDeleteTask }) {
+export function TaskCreated({ task, onDeleteTask, isCompletedTask }) {
   const [isCheckBoxChecked, setIsCheckBoxChecked] = useState(false);
 
-  function handleDeleteTask() {
+  function handleDeleteTask(event) {
     onDeleteTask(task);
+
+    const checkbox = event.target.parentElement.querySelector(
+      'input[type="checkbox"]',
+    );
+    if (checkbox.checked) {
+      isCompletedTask(false);
+    }
   }
 
   function handleCheckTask(event) {
@@ -15,14 +22,10 @@ export function TaskCreated({ task, onDeleteTask }) {
     const isChecked = event.target.checked;
     if (isChecked) {
       setIsCheckBoxChecked(isChecked);
+      isCompletedTask(true);
+    } else {
+      isCompletedTask(false);
     }
-
-    // Crie uma cópia da tarefa com o status atualizado
-    // const updatedTask = { ...task, status: 1 };
-
-    // Chame uma função para atualizar a tarefa no componente pai
-    // Por exemplo, passando a tarefa atualizada para uma função onUpdateTask
-    // onUpdateStatusTask(updatedTask);
   }
 
   const labelStyle = isCheckBoxChecked
@@ -31,12 +34,7 @@ export function TaskCreated({ task, onDeleteTask }) {
 
   return (
     <article>
-      <input
-        type="checkbox"
-        name="taskStatus"
-        className={styles.checkedTask}
-        onClick={handleCheckTask}
-      />
+      <input type="checkbox" name="checkTask" onClick={handleCheckTask} />
       <label style={labelStyle}>{task.content}</label>
       <img src={trash} onClick={handleDeleteTask} />
     </article>

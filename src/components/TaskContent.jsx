@@ -2,7 +2,7 @@ import styles from './TaskContent.module.css';
 import clipboard from '../assets/Clipboard.svg';
 import { TaskCreated } from './TaskCreated';
 
-export function TaskContent({ tasks, onDeleteTask }) {
+export function TaskContent({ tasks, onDeleteTask, isCompletedTask }) {
   return (
     <section>
       {tasks.length === 0 ? (
@@ -19,6 +19,7 @@ export function TaskContent({ tasks, onDeleteTask }) {
                 key={task.id}
                 task={task}
                 onDeleteTask={onDeleteTask}
+                isCompletedTask={isCompletedTask}
               />
             );
           })}
