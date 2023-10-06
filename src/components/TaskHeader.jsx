@@ -11,7 +11,7 @@ export function TaskHeader({ tasks, totalCompletedTask }) {
         </div>
         <div className={styles.completedTask}>
           Completed
-          <span>{`${totalCompletedTask} de ${tasks.length}`}</span>
+          <span>{`${totalCompletedTask} of ${tasks.length}`}</span>
         </div>
       </div>
     </section>
