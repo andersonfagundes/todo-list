@@ -22,7 +22,7 @@ This project was developed using cutting edge front-end technologies.
 
 ### Requirements
 
-- You need to install both [Node.js](https://nodejs.org/en/download/) to run this project.
+- You need to install [Node.js](https://nodejs.org/en/download/) to run this project.
 
 **Clone the project and access the folder**
 
